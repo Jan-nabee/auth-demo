@@ -9,8 +9,8 @@ if (code) {
       grant_type: "authorization_code",
       // 카카오 데벨로퍼 사이트에서 레스트 api키 받아서 수정 필요
       client_id: "24a499a41b2d810a29f3a571dc84a7db",
-    //   redirect_uri: "https://jan-nabee.github.io/auth-demo/kakao-callback.html",
-      redirect_uri: "https://127.0.0.1:5500/kakao-callback.html",
+      redirect_uri: "https://jan-nabee.github.io/auth-demo/kakao-callback.html",
+    //   redirect_uri: "https://127.0.0.1:5500/kakao-callback.html",
       code: code,
     }),
   })
