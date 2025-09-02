@@ -11,6 +11,11 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
 
+    <!--카카오 로그인-->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/v1/kakao.min.js"
+    crossorigin="anonymous"></script>
+    <script src="js/firebase/kakao-init.js" defer></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="js/login.js" defer></script>
   </head>
@@ -18,7 +23,7 @@
     <div class="bg-white shadow-lg rounded-lg sm:w-96 w-11/12 p-6">
       <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">로그인</h1>
 
-      <div class="space-y-4">
+      <div class="space-y-4 text-center">
         <button
           id="google-login-btn"
           class="w-full flex items-center justify-center bg-red-500 text-white py-2 px-4 shadow-md rounded-lg hover:bg-red-600"
@@ -30,6 +35,12 @@
           class="w-full flex items-center justify-center bg-gray-800 text-white py-2 px-4 shadow-md rounded-lg hover:bg-gray-900"
         >
           <i class="fa-brands fa-github mr-2"></i>Github로 로그인
+        </button>
+        <button
+          id="kakao-login-btn"
+          class="focus:outline-none w-full"
+        >
+          <img class="w-full" src="img/kakao_login_medium_wide.png" alt="카카오톡 로그인">
         </button>
       </div>
 
